@@ -1,0 +1,29 @@
+[project]
+name = "flask-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14.2"
+dependencies = [
+    "bcrypt>=5.0.0",
+    "cryptography>=46.0.3",
+    "flask>=3.1.2",
+    "flask-cors>=6.0.2",
+    "flask-jwt-extended>=4.7.1",
+    "flask-siwadoc>=0.2.4",
+    "flask-sqlalchemy>=3.1.1",
+    "loguru>=0.7.3",
+    "psutil>=7.2.0",
+    "pymysql>=1.1.2",
+    "requests>=2.32.5",
+    "user-agents>=2.2.0",
+]
+
+# 缓存目录
+[tool.uv]
+cache-dir = "./.cache"
+
+# 国内源
+[[tool.uv.index]]
+name = "tuna"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
